@@ -1,5 +1,6 @@
+/*Insert element at a poistion in the given array*/
 package Arrays1D;
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class Insert_Element {
