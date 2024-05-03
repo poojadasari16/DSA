@@ -1,7 +1,6 @@
 /*To check frequency of K in given array*/
 package Arrays1D;
 import java.util.Scanner;
-
 public class KFreq {
     public static int FrequencyK(int A[],int K){
         int freq =0;
