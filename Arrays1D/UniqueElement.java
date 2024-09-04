@@ -1,16 +1,15 @@
 package Arrays1D;
 public class UniqueElement {
-    public static int UniEle(int A[]){
-        int result = 0;
-        // XOR all elements in the array
-        for (int i=0;i<A.length;i++){
-            result ^= i;                    //XOR operation cancels both duplicate values and return 0 and if there are no same numbers then it returns num
+    public static int singleNumber(int A[]) {
+        int UniqueNumber =0;
+        for(int i=0;i<A.length;i++){
+            UniqueNumber = UniqueNumber ^ A[i]; /*Using XOR operation, duplicate elements will be ignored & it returns single element*/
         }
-        return result;
+        return UniqueNumber;
     }
-    public static void main(String args[]){
-        int array[]= {7,1,5,13,1,14,19,16,15,8,10,15,17,35,12,17,14,19,11,9,5,10,12,18,16,4,4,6,3,3,2,11,8,18,6,20,13,2,7,9,20};
-        int UniqueElement=UniEle(array);
-        System.out.println(UniqueElement);
+        public static void main (String args[]){
+            int array[] = {7, 1, 5, 13, 7, 5, 1};
+            int res = singleNumber(array);
+            System.out.println(res);
+        }
     }
-}
